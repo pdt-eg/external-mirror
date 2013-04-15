@@ -1,8 +1,6 @@
 PDT Extension Group P2 mirror (Development Snapshot)
 ====================================================
 
-[![Build Status](https://secure.travis-ci.org/pdt-eg/p2-mirror-dev.png)](http://travis-ci.org/pdt-eg/p2-mirror-dev)
-
 A mirror for various p2 repositories a.k.a eclipse updatesites to provide a centralized repository for
 all your PDT needs.
 
@@ -25,6 +23,7 @@ If you want to add your updatesite to the mirror follow these steps:
 
 ### Building the repo
 
+The build status can be found in our [Jenkins instance](http://ci.pdt-extensions.org/job/external-mirror).
 
 #### Clone the necessary repos
 
