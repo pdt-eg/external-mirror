@@ -153,6 +153,15 @@
       <category name="editors"/>
    </feature>
 
+   <feature id="org.zend.php.zendserver.deployment" version="0.0.0">
+      <category name="toolchains"/>
+   </feature>   
+
+   <feature id="org.zend.php.zendserver.deployment.debug" version="0.0.0">
+      <category name="toolchains"/>
+   </feature>
+  
+
    <!-- shell editor -->
    <!-- dependency conflict, requires dltk 4.0.0, pdt extensions requires 5.0.0
    <feature id="net.sourceforge.shelled" version="0.0.0">

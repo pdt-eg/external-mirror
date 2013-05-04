@@ -158,6 +158,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 							<url>http://dadacoalition.org/yedit</url>
 							<layout>p2</layout>
 						</repository>
+
+						<repository>
+							<url>http://zend-sdk.googlecode.com/svn/trunk/eclipse-update/nightly</url>
+							<layout>p2</layout>
+						</repository>						
 						
 					</source>
 
