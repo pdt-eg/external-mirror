@@ -161,6 +161,22 @@
       <category name="toolchains"/>
    </feature>
   
+   <feature id="com.wdev91.eclipse.copyright.feature" version="0.0.0">
+      <category name="misc"/>
+   </feature>
+
+   <feature id="net.w3des.extjs.feature" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
+   <feature id="net.mihai-nita.ansicon" version="0.0.0">
+      <category name="misc"/>
+   </feature>
+
+   <feature id="eclipse.themes.darker.feature" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
 
    <!-- shell editor -->
    <!-- dependency conflict, requires dltk 4.0.0, pdt extensions requires 5.0.0

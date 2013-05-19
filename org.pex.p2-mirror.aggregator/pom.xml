@@ -163,6 +163,33 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 							<url>http://zend-sdk.googlecode.com/svn/trunk/eclipse-update/nightly</url>
 							<layout>p2</layout>
 						</repository>						
+
+						<!-- extJS plugin -->
+
+						<repository>
+							<url>http://extjs.w3des.net/p2</url>
+							<layout>p2</layout>
+						</repository>						
+
+						<!-- ANSI console plugin -->
+						<repository>
+							<url>http://www.mihai-nita.net/eclipse</url>
+							<layout>p2</layout>
+						</repository>						
+						
+						<!-- Copyright wizard -->
+						<repository>
+							<url>http://www.wdev91.com/update/</url>
+							<layout>p2</layout>
+						</repository>	
+
+						<!-- darker theme https://github.com/jinmingjian/eclipse.themes.darker -->
+						<repository>
+							<url>http://jinmingjian.github.io/updatesite/</url>
+							<layout>p2</layout>
+						</repository>	
+
+					
 						
 					</source>
 
