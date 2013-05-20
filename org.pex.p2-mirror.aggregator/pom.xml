@@ -124,10 +124,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 							<layout>p2</layout>
 						</repository>
 
+						<!-- disabled temporarily due to https://github.com/vtst/ow/issues/148 -->
+						<!--
 						<repository>
 							<url>http://www.normalesup.org/~simonet/soft/ow/update/</url>
 							<layout>p2</layout>
 						</repository>
+						-->
 
 						<repository>
 							<url>http://vrapper.sourceforge.net/update-site/unstable</url>

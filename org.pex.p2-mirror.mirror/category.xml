@@ -121,17 +121,21 @@
       <category name="editors"/>
    </feature>
 
+   <!--
    <feature id="net.vtst.ow.eclipse.js.closure.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
+
 
    <feature id="net.vtst.ow.eclipse.less.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
 
+
    <feature id="net.vtst.ow.eclipse.soy.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
+   -->
 
    <feature id="markdown.editor.feature" version="0.0.0">
       <category name="editors"/>
