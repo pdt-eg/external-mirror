@@ -27,6 +27,11 @@
    <feature id="com.dubture.symfony.feature" version="0.0.0">
       <category name="PEX"/>
    </feature>
+   
+   <feature id="si.gos.transpiler" version="0.0.0">
+      <category name="PEX"/>
+   </feature>
+   
   <category-def name="PEX" label="PDT Extension Group">
       <description>
          PDT Extension Group
