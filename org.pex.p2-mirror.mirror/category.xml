@@ -4,27 +4,27 @@
    <feature id="org.sourceforge.jsonedit.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
-   
+
    <feature id="org.pdtextensions.feature" version="0.0.0">
       <category name="pexcore"/>
    </feature>
-   
+
    <feature id="com.dubture.composer.feature" version="0.0.0">
       <category name="toolchains"/>
    </feature>
-   
+
    <feature id="com.dubture.twig.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
-   
+
    <feature id="com.dubture.doctrine.feature" version="0.0.0">
       <category name="libraries"/>
    </feature>
-   
+
    <feature id="com.dubture.indexing.feature" version="0.0.0">
       <category name="misc"/>
    </feature>
-   
+
    <feature id="com.dubture.symfony.feature" version="0.0.0">
       <category name="frameworks"/>
    </feature>
@@ -108,14 +108,14 @@
    <feature id="net.sourceforge.vrapper.plugin.surround" version="0.0.0">
       <category name="editors"/>
    </feature>
-   
+
    <feature id="csep.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
 
    <feature id="de.anbos.eclipse.logviewer.feature" version="0.0.0">
       <category name="misc"/>
- 
+
    </feature>
    <feature id="com.github.eclipsecolortheme.feature" version="0.0.0">
       <category name="editors"/>
@@ -159,19 +159,21 @@
 
    <feature id="org.zend.php.zendserver.deployment" version="0.0.0">
       <category name="toolchains"/>
-   </feature>   
+   </feature>
 
    <feature id="org.zend.php.zendserver.deployment.debug" version="0.0.0">
       <category name="toolchains"/>
    </feature>
-   
+
    <feature id="si.gos.transpiler" version="0.0.0">
       <category name="toolchains"/>
    </feature>
-  
+
+<!--  
    <feature id="com.wdev91.eclipse.copyright.feature" version="0.0.0">
       <category name="misc"/>
    </feature>
+-->
 
    <feature id="net.w3des.extjs.feature" version="0.0.0">
       <category name="editors"/>

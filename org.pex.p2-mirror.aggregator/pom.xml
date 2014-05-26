@@ -98,7 +98,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 							<url>http://eclipse.piece-framework.com</url>
 							<layout>p2</layout>
 						</repository>
-						
+
 						<repository>
 							<url>http://coffeescript-editor.eclipselabs.org.codespot.com/hg/</url>
 							<layout>p2</layout>
@@ -165,35 +165,39 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 						<repository>
 							<url>http://zend-sdk.googlecode.com/svn/trunk/eclipse-update/nightly</url>
 							<layout>p2</layout>
-						</repository>						
+						</repository>
 
 						<!-- extJS plugin -->
 
 						<repository>
 							<url>http://extjs.w3des.net/p2</url>
 							<layout>p2</layout>
-						</repository>						
+						</repository>
 
 						<!-- ANSI console plugin -->
 						<repository>
 							<url>http://www.mihai-nita.net/eclipse</url>
 							<layout>p2</layout>
-						</repository>						
-						
+						</repository>
+
 						<!-- Copyright wizard -->
+						<!-- p2 repo not available anymore... http://www.wdev91.com/-->
+						<!-- TODO: search for a replacement, maybe http://sourceforge.net/projects/eclipsecopyrigh/ -->
+						<!--
 						<repository>
 							<url>http://www.wdev91.com/update/</url>
 							<layout>p2</layout>
-						</repository>	
+						</repository>
+						-->
 
 						<!-- darker theme https://github.com/jinmingjian/eclipse.themes.darker -->
 						<repository>
 							<url>http://jinmingjian.github.io/updatesite/</url>
 							<layout>p2</layout>
-						</repository>	
+						</repository>
 
-					
-						
+
+
 					</source>
 
 					<!-- The destination directory to mirror to. -->

@@ -22,7 +22,7 @@
 
 	<properties>
 		<tycho-version>0.19.0</tycho-version>
-		<composer-version>0.0.4-SNAPSHOT</composer-version>
+		<composer-version>0.0.5-SNAPSHOT</composer-version>
 	</properties>
 
 	<dependencies>
