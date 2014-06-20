@@ -18,7 +18,7 @@
 		<!-- 2. Aggregate 3rd party features -->
 		<module>org.pex.p2-mirror.aggregator</module>
 
-	</modules>
+	</modules> 
 
 	<properties>
 		<tycho-version>0.19.0</tycho-version>
@@ -31,6 +31,16 @@
 			<artifactId>composer-java-api</artifactId>
 			<version>${composer-version}</version>
 		</dependency>
+		<dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dubture.osgi</groupId>
+            <artifactId>org.json.simple</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 	</dependencies>
 
 	<!-- Currently the build needs 2 passed due to https://bugs.eclipse.org/bugs/show_bug.cgi?id=353889 -->
@@ -47,12 +57,6 @@
 	</profiles>
 
 	<repositories>
-    	<repository>
-		      <id>dubture-osgi</id>
-		      <layout>p2</layout>
-		      <url>http://dzwiupza59who.cloudfront.net/repository</url>
-        </repository>
-
 		<repository>
 			<id>pdt-nightly</id>
 			<layout>p2</layout>
@@ -76,6 +80,16 @@
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
 		</repository>
+		<repository>
+            <id>Sonatype-public</id>
+            <name>SnakeYAML repository</name>
+            <url>http://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+        <repository>
+          <id>yedit</id>
+          <layout>p2</layout>
+          <url>http://dadacoalition.org/yedit</url>
+        </repository>
 	</repositories>
 
 	<build>
