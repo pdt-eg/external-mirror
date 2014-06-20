@@ -15,10 +15,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
 	<repositories>
 		<repository>
-			<id>kepler</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
-		</repository>
+            <id>kepler</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/kepler</url>
+        </repository>
+        
+        <repository>
+            <id>juno</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/juno</url>
+        </repository>
 
        <repository>
             <id>pdt-nightly</id>
