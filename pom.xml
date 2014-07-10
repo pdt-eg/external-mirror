@@ -73,7 +73,12 @@
 			<id>kepler</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/kepler</url>
-		</repository>
+    </repository>
+    <repository>
+      <id>luna</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/releases/luna</url>
+    </repository> 
 
 		<repository>
 			<id>orbit</id>
