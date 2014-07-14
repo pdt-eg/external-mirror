@@ -95,6 +95,11 @@
           <layout>p2</layout>
           <url>http://dadacoalition.org/yedit</url>
         </repository>
+        <repository>
+          <id>xtext</id>
+          <layout>p2</layout>
+          <url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</url>
+        </repository>
 	</repositories>
 
 	<build>
