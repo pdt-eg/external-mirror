@@ -126,7 +126,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 						</repository>
 
 						<repository>
-							<url>http://winterstein.me.uk/projects/tt-update-site/</url>
+              <url>http://dl.bintray.com/enide/Markdown/1.1.0/</url>
 							<layout>p2</layout>
 						</repository>
 
