@@ -11,84 +11,60 @@
 	</parent>
 
 	<artifactId>mirror</artifactId>
-	<packaging>eclipse-repository</packaging>
+	<packaging>pom</packaging>
 
-	<repositories>
-
-		<repository>
-			<id>kepler</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
-		</repository>
-
-		<repository>
-			<id>juno</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/juno</url>
-		</repository>
-
-		<repository>
-			<id>mirror</id>
-			<layout>p2</layout>
-			<url>${project.baseUri}../org.pex.p2-mirror.aggregator/target/mirror</url>
-		</repository>
-		<repository>
-			<id>local-repo</id>
-			<layout>p2</layout>
-			<url>${project.baseUri}../org.pex.p2-mirror.repo/target/repository</url>
-		</repository>
-
-
-		<!-- coffeescript editor dependency -->
-		<repository>
-			<id>xtext</id>
-			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</url>
-			<layout>p2</layout>
-		</repository>
-
-		<!-- eclipse color themes dependency -->
-		<repository>
-			<id>color-theme</id>
-			<url>http://eclipse-color-theme.github.com/update/</url>
-			<layout>p2</layout>
-		</repository>
-		<repository>
-			<id>vrapper</id>
-			<url>http://vrapper.sourceforge.net/update-site/stable</url>
-			<layout>p2</layout>
-		</repository>
-	</repositories>
 	<build>
 		<plugins>
 			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.5</version>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-eclipserun-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<appArgLine>-application org.eclipse.b3.cli.headless aggregate --buildModel mirror.b3aggr</appArgLine>
+					<argLine>-Xmx512m -XX:MaxPermSize=256m</argLine>
+					<dependencies>
+						<dependency>
+							<artifactId>org.eclipse.b3.aggregator.engine.feature</artifactId>
+							<type>eclipse-feature</type>
+						</dependency>
+					</dependencies>
+					<repositories>
+						<repository>
+							<id>b3-headless</id>
+							<layout>p2</layout>
+							<url>http://download.eclipse.org/modeling/emft/b3/headless-4.4/</url>
+						</repository>
+						<repository>
+							<id>b3</id>
+							<layout>p2</layout>
+							<url>http://download.eclipse.org/modeling/emft/b3/updates-4.4/</url>
+						</repository>
+						<repository>
+							<id>luna</id>
+							<layout>p2</layout>
+							<url>http://download.eclipse.org/releases/luna/</url>
+						</repository>
+					</repositories>
+				</configuration>
 				<executions>
 					<execution>
-						<id>copy-resources</id>
-						<phase>package</phase>
 						<goals>
-							<goal>copy-resources</goal>
+							<goal>eclipse-run</goal>
 						</goals>
-						<configuration>
-							<overwrite>true</overwrite>
-							<outputDirectory>${project.basedir}/../../p2-mirror-dev-repo</outputDirectory>
-							<resources>
-								<resource>
-									<directory>target/repository</directory>
-								</resource>
-							</resources>
-						</configuration>
+						<phase>compile</phase>
 					</execution>
 				</executions>
 			</plugin>
-
+			<!-- clean the repo otherwise the old .jars pile up -->
 			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-packaging-plugin</artifactId>
-				<version>${tycho-version}</version>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.4.1</version>
 				<configuration>
-					<archiveSite>true</archiveSite>
+					<filesets>
+						<fileset>
+							<directory>${project.basedir}/mirror/final</directory>
+						</fileset>
+					</filesets>
 				</configuration>
 			</plugin>
 		</plugins>

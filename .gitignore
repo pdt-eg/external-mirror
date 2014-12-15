@@ -4,3 +4,5 @@ build.properties
 .project
 .settings/
 bin/
+org.pex.p2-mirror.mirror/mirror/
+workspace

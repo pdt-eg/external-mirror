@@ -9,42 +9,58 @@
 		<artifactId>main</artifactId>
 		<version>0.0.1</version>
 	</parent>
-
 	<artifactId>repo</artifactId>
 	<packaging>eclipse-repository</packaging>
-
+	<properties>
+		<composer-version>0.0.5-SNAPSHOT</composer-version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.dubture</groupId>
+			<artifactId>composer-java-api</artifactId>
+			<version>${composer-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.13</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dubture.osgi</groupId>
+			<artifactId>org.json.simple</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 	<repositories>
-
-		<repository>
-			<id>kepler</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
-		</repository>
-		
-		<repository>
-            <id>juno</id>
-            <layout>p2</layout>
-            <url>http://download.eclipse.org/releases/juno</url>
-        </repository>
-
 		<repository>
 			<id>pdt-nightly</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/tools/pdt/updates/latest-nightly/</url>
 		</repository>
-
 		<repository>
 			<id>dltk</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/</url>
 		</repository>
-
+		<repository>
+			<id>luna</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/luna</url>
+		</repository>
 		<repository>
 			<id>orbit</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
 		</repository>
-
+		<repository>
+			<id>Sonatype-public</id>
+			<name>SnakeYAML repository</name>
+			<url>http://oss.sonatype.org/content/groups/public/</url>
+		</repository>
+		<repository>
+			<url>http://dadacoalition.org/yedit</url>
+			<layout>p2</layout>
+			<id>yedit</id>
+		</repository>
 	</repositories>
-
 </project>

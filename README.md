@@ -16,8 +16,8 @@ The stable mirror has not been released yet.
 If you want to add your updatesite to the mirror follow these steps:
 
 1. Fork the repo
-2. Add your repository URL to the `<repositories>` node in `org.pex.p2-mirror.aggregator/pom.xml`
-3. Add your feature(s) to a corresponding category by adding a `<feature>` node to `org.pex.p2-mirror.mirror/category.xml`
+2. Open org.pex.p2-mirror.mirror/mirro.b3aggr in b3 editor
+3. Create your contribution in validation set main.
 4. Send us a pull request
 
 
@@ -73,7 +73,6 @@ $GIT pull origin master
 
 ## build the mirror-repository
 $MVN -Dsurefire.memory="-Xmx512m" clean install
-$MVN -Dsurefire.memory="-Xmx512m" -P packageRepo clean install
 
 ## deploy to the github page
 cd $BASEPATH/p2-mirror-dev-repo

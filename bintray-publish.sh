@@ -10,11 +10,11 @@ $PACKAGE=nightly
 $VERSION=0.0.1
 
 # upload artifacts.jar/content.jar
-curl -T $WORKSPACE/org.pex.p2-mirror.mirror/target/repository/artifacts.jar -u$USER:$API_KEY https://api.bintray.com/content/$USER/$REPO/$PACKAGE/$VERSION/artifacts.jar
-curl -T $WORKSPACE/org.pex.p2-mirror.mirror/target/repository/content.jar -u$USER:$API_KEY https://api.bintray.com/content/$USER/$REPO/$PACKAGE/$VERSION/content.jar
+curl -T $WORKSPACE/org.pex.p2-mirror.mirror/mirror/final/artifacts.jar -u$USER:$API_KEY https://api.bintray.com/content/$USER/$REPO/$PACKAGE/$VERSION/artifacts.jar
+curl -T $WORKSPACE/org.pex.p2-mirror.mirror/mirror/final/content.jar -u$USER:$API_KEY https://api.bintray.com/content/$USER/$REPO/$PACKAGE/$VERSION/content.jar
 
 # upload features
-FILES=$WORKSPACE/org.pex.p2-mirror.mirror/target/repository/features/*
+FILES=$WORKSPACE/org.pex.p2-mirror.mirror/mirror/final/features/*
 for f in $FILES
 do
   name=eval basename $f
@@ -23,7 +23,7 @@ do
 done
 
 # upload plugins
-FILES=$WORKSPACE/org.pex.p2-mirror.mirror/target/repository/plugins/*
+FILES=$WORKSPACE/org.pex.p2-mirror.mirror/mirror/final/plugins/*
 for f in $FILES
 do
   name=eval basename $f
