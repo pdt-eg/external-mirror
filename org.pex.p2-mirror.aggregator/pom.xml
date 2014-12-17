@@ -154,7 +154,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 						</repository>
 
 						<repository>
-							<url>https://downloads.sourceforge.net/project/shelled/shelled/ShellEd%202.0.2/update</url>
+							<url>https://sourceforge.net/projects/shelled/files/shelled/update/</url>
 							<layout>p2</layout>
 						</repository>
 
