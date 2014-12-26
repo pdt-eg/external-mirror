@@ -138,10 +138,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 						</repository>
 						-->
 
-						<repository>
+            <!--repository> // sourceforce sometimes return 404 for this update site
 							<url>http://vrapper.sourceforge.net/update-site/unstable</url>
 							<layout>p2</layout>
-						</repository>
+						</repository-->
 
 						<repository>
 							<url>http://github.eclipsesource.com/jshint-eclipse/updates/</url>

@@ -21,7 +21,7 @@
 	</modules> 
 
 	<properties>
-		<tycho-version>0.19.0</tycho-version>
+		<tycho-version>0.22.0</tycho-version>
 		<composer-version>0.0.5-SNAPSHOT</composer-version>
 	</properties>
 
@@ -60,7 +60,7 @@
 		<repository>
 			<id>pdt-nightly</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/pdt/updates/3.3-nightly/</url>
+			<url>http://download.eclipse.org/tools/pdt/updates/latest-nightly/</url>
 		</repository>
 
 		<repository>
@@ -93,7 +93,7 @@
         <repository>
           <id>yedit</id>
           <layout>p2</layout>
-          <url>http://dadacoalition.org/yedit</url>
+          <url>http://dadacoalition.org/yedit/</url>
         </repository>
         <repository>
           <id>xtext</id>

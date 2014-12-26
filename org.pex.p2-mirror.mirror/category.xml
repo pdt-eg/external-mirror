@@ -33,7 +33,7 @@
       <category name="editors"/>
    </feature>
 
-   <feature id="org.dadacoalition.yedit.feature" version="0.0.0">
+   <feature id="org.dadacoalition.yedit" version="0.0.0">
       <category name="editors"/>
    </feature>
 
