@@ -10,19 +10,9 @@
 	<packaging>pom</packaging>
 
 	<url>https://github.com/pdt-eg/p2-mirror-dev</url>
-
-	<modules>
-		<!-- 1. Create a local repo containing the in-house features -->
-		<module>org.pex.p2-mirror.repo</module>
-
-		<!-- 2. Aggregate 3rd party features -->
-		<module>org.pex.p2-mirror.aggregator</module>
-
-	</modules> 
-
 	<properties>
 		<tycho-version>0.22.0</tycho-version>
-		<composer-version>0.0.5-SNAPSHOT</composer-version>
+    <composer-version>0.0.5-SNAPSHOT</composer-version>
 	</properties>
 
 	<dependencies>
@@ -32,27 +22,46 @@
 			<version>${composer-version}</version>
 		</dependency>
 		<dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>1.13</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dubture.osgi</groupId>
-            <artifactId>org.json.simple</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.13</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dubture.osgi</groupId>
+			<artifactId>org.json.simple</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<!-- Currently the build needs 2 passed due to https://bugs.eclipse.org/bugs/show_bug.cgi?id=353889 -->
-	<!-- Otherwise the first build will fail due to the non-existent aggregated 
-		local repository -->
-	<profiles>
+	<!-- Otherwise the first build will fail due to the non-existent aggregated local 
+		repository -->
+  <profiles>
+    <profile>
+			<id>buildRepo</id>
+			<modules>
+				<!-- 1. Create a local repo containing the in-house features -->
+				<module>org.pex.p2-mirror.repo</module>
+				<!-- 2. Aggregate 3rd party features -->
+				<module>org.pex.p2-mirror.aggregator</module>
+			</modules>
+			<activation>
+				<property>
+          <name>!packageRepo</name>
+				</property>
+			</activation>
+		</profile>
 		<profile>
 			<id>packageRepo</id>
 			<modules>
 				<!-- 3. Mirror everything into a common repo -->
 				<module>org.pex.p2-mirror.mirror</module>
-			</modules>
+      </modules>
+      <activation>
+        <property>
+          <name>packageRepo</name>
+        </property>
+      </activation>
 		</profile>
 	</profiles>
 
@@ -73,12 +82,12 @@
 			<id>kepler</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/kepler</url>
-    </repository>
-    <repository>
-      <id>luna</id>
-      <layout>p2</layout>
-      <url>http://download.eclipse.org/releases/luna</url>
-    </repository> 
+		</repository>
+		<repository>
+			<id>luna</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/luna</url>
+		</repository>
 
 		<repository>
 			<id>orbit</id>
@@ -86,20 +95,20 @@
 			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
 		</repository>
 		<repository>
-            <id>Sonatype-public</id>
-            <name>SnakeYAML repository</name>
-            <url>http://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-        <repository>
-          <id>yedit</id>
-          <layout>p2</layout>
-          <url>http://dadacoalition.org/yedit/</url>
-        </repository>
-        <repository>
-          <id>xtext</id>
-          <layout>p2</layout>
-          <url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</url>
-        </repository>
+			<id>Sonatype-public</id>
+			<name>SnakeYAML repository</name>
+			<url>http://oss.sonatype.org/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>yedit</id>
+			<layout>p2</layout>
+			<url>http://dadacoalition.org/yedit/</url>
+		</repository>
+		<repository>
+			<id>xtext</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</url>
+		</repository>
 	</repositories>
 
 	<build>

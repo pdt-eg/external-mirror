@@ -5,33 +5,39 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-	  <groupId>org.pex.p2-mirror</groupId>
-	  <artifactId>main</artifactId>
-	  <version>0.0.1</version>	
+		<groupId>org.pex.p2-mirror</groupId>
+		<artifactId>main</artifactId>
+		<version>0.0.1</version>
 	</parent>
 
 	<artifactId>mirror</artifactId>
 	<packaging>eclipse-repository</packaging>
 
 	<repositories>
-	
+
 		<repository>
 			<id>kepler</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/kepler</url>
 		</repository>
-		
+
 		<repository>
-      <id>juno</id>
-      <layout>p2</layout>
-      <url>http://download.eclipse.org/releases/juno</url>
-    </repository>
-	
+			<id>juno</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/juno</url>
+		</repository>
+
 		<repository>
 			<id>mirror</id>
 			<layout>p2</layout>
 			<url>${project.baseUri}../org.pex.p2-mirror.aggregator/target/mirror</url>
 		</repository>
+		<repository>
+			<id>local-repo</id>
+			<layout>p2</layout>
+			<url>${project.baseUri}../org.pex.p2-mirror.repo/target/repository</url>
+		</repository>
+
 
 		<!-- coffeescript editor dependency -->
 		<repository>
@@ -45,42 +51,42 @@
 			<id>color-theme</id>
 			<url>http://eclipse-color-theme.github.com/update/</url>
 			<layout>p2</layout>
-    </repository>			
-    <repository> 
-      <id>vrapper</id>
-      <url>http://vrapper.sourceforge.net/update-site/stable</url>
-      <layout>p2</layout>
-    </repository>
+		</repository>
+		<repository>
+			<id>vrapper</id>
+			<url>http://vrapper.sourceforge.net/update-site/stable</url>
+			<layout>p2</layout>
+		</repository>
 	</repositories>
 	<build>
 		<plugins>
-	      <plugin>
-	        <artifactId>maven-resources-plugin</artifactId>
-	        <version>2.5</version>
-	        <executions>
-	          <execution>
-	            <id>copy-resources</id>
-	            <phase>package</phase>
-	            <goals>
-	              <goal>copy-resources</goal>
-	            </goals>
-	            <configuration>
-				  <overwrite>true</overwrite>
-	              <outputDirectory>${project.basedir}/../../p2-mirror-dev-repo</outputDirectory>
-	              <resources>
-	                <resource>
-	                  <directory>target/repository</directory>	                  
-	                </resource>
-	              </resources>
-	            </configuration>
-	          </execution>
-	        </executions>
-	      </plugin>
-				
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<overwrite>true</overwrite>
+							<outputDirectory>${project.basedir}/../../p2-mirror-dev-repo</outputDirectory>
+							<resources>
+								<resource>
+									<directory>target/repository</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-packaging-plugin</artifactId>
-				<version>${tycho-version}</version>				
+				<version>${tycho-version}</version>
 				<configuration>
 					<archiveSite>true</archiveSite>
 				</configuration>

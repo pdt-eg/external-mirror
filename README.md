@@ -37,7 +37,7 @@ You can use this shell script for initializing the repos:
 ```
 
 1. In `p2-mirror-dev` run `mvn clean install`
-2. In `p2-mirror-dev` run `mvn clean install -P packageRepo` (the 2nd step is necessary due to a bug in tycho)
+2. In `p2-mirror-dev` run `mvn clean install -DpackageRepo` (the 2nd step is necessary due to a bug in tycho)
 3. This will result in a working p2 repository in `p2-mirror-dev.git`
 
 
