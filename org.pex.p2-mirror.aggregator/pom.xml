@@ -35,7 +35,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
        <repository>
             <id>dltk</id>
             <layout>p2</layout>
-            <url>https://hudson.eclipse.org/hudson/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site/</url>
+            <url>https://hudson.eclipse.org/dltk/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/repository/</url>
         </repository>
 
 	</repositories>
@@ -154,7 +154,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 						</repository>
 
 						<repository>
-							<url>https://sourceforge.net/projects/shelled/files/shelled/update/</url>
+							<url>https://main.dl.sourceforge.net/projects/shelled/files/shelled/update/</url>
 							<layout>p2</layout>
 						</repository>
 
