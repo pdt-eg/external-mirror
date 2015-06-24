@@ -153,10 +153,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 							<layout>p2</layout>
 						</repository>
 
-						<repository>
+						<!--repository>
 							<url>https://main.dl.sourceforge.net/projects/shelled/files/shelled/update/</url>
 							<layout>p2</layout>
-						</repository>
+						</repository-->
 
 						<repository>
 							<url>http://cucumber.github.com/cucumber-eclipse/update-site</url>
