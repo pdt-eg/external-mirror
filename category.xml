@@ -4,30 +4,6 @@
 		<category name="PEX" />
 	</feature>
 
-	<feature id="org.pdtextensions.feature" version="0.0.0">
-		<category name="PEX" />
-	</feature>
-
-	<feature id="com.dubture.composer.feature" version="0.0.0">
-		<category name="PEX" />
-	</feature>
-
-	<feature id="com.dubture.twig.feature" version="0.0.0">
-		<category name="PEX" />
-	</feature>
-
-	<feature id="com.dubture.doctrine.feature" version="0.0.0">
-		<category name="PEX" />
-	</feature>
-
-	<feature id="com.dubture.indexing.feature" version="0.0.0">
-		<category name="PEX" />
-	</feature>
-
-	<feature id="com.dubture.symfony.feature" version="0.0.0">
-		<category name="PEX" />
-	</feature>
-
 	<feature id="si.gos.transpiler" version="0.0.0">
 		<category name="PEX" />
 	</feature>
