@@ -9,8 +9,8 @@
 	<artifactId>repo</artifactId>
 	<packaging>eclipse-repository</packaging>
 	<properties>
-		<composer-version>0.0.5-SNAPSHOT</composer-version>
-		<tycho-version>0.22.0</tycho-version>
+		<composer-version>0.0.6-SNAPSHOT</composer-version>
+		<tycho-version>0.23.1</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<eclipse.name>luna</eclipse.name>
 		<release>false</release>
@@ -70,6 +70,14 @@
 			<layout>p2</layout>
 			<id>yedit</id>
 		</repository>
+		<repository>
+			<id>oss-sonatype</id>
+			<name>oss-sonatype</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+    </repository>
 	</repositories>
 	<build>
 		<plugins>
