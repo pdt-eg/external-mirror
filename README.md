@@ -9,4 +9,4 @@ p2 mirror for plugins:
 * [org.ganoro.phing.feature](https://github.com/ganoro/phing-eclipse)
 
 ### Direct p2 update site:
-https://github.com/pdt-eg/external-mirror/nightly
+[http://pdt-eg.github.io/external-mirror/nightly](http://pdt-eg.github.io/external-mirror/nightly)
