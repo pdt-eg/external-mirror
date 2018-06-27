@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-	<feature id="org.sourceforge.jsonedit.feature" version="0.0.0">
-		<category name="PEX" />
-	</feature>
-
 	<feature id="si.gos.transpiler" version="0.0.0">
 		<category name="PEX" />
 	</feature>
 
 	<feature id="org.eclipse.php.smarty_feature" version="0.0.0">
-		<category name="Other" />
-	</feature>
-	<feature id="org.ganoro.phing.feature" version="0.0.0">
 		<category name="Other" />
 	</feature>
 

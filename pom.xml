@@ -12,7 +12,7 @@
 		<composer-version>0.0.6-SNAPSHOT</composer-version>
 		<tycho-version>1.0.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<eclipse.name>oxygen</eclipse.name>
+		<eclipse.name>photon</eclipse.name>
 		<release>false</release>
 		<bintray.user></bintray.user>
 		<bintray.apikey></bintray.apikey>
@@ -44,11 +44,6 @@
 			<id>eclipse</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/${eclipse.name}</url>
-		</repository>
-		<repository>
-			<id>json-editor</id>
-			<layout>p2</layout>
-			<url>http://boothen.github.io/Json-Eclipse-Plugin/</url>
 		</repository>
 		<repository>
 			<id>dltk</id>
