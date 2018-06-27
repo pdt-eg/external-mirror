@@ -6,6 +6,6 @@
     <property name="p2.timestamp" value="1499976808656"/>
   </properties>
  <children size="1">
-   <child location="http://dl.bintray.com/zulus/external-mirror/nightly/0.0.3/"/>
+   <child location="http://dl.bintray.com/zulus/external-mirror/nightly/0.0.4/"/>
   </children>
 </repository>
